@@ -4,6 +4,8 @@ metadata:
   annotations:
     architecture: x86_64
     build-date: 2020-09-03T09:04:29.841722
+    commit.image.appsody.dev/date: Mon Oct 26 09:43:27 2020 +0100
+    commit.image.appsody.dev/message: version1
     commit.stack.appsody.dev/contextDir: /incubator/nodejs-express
     commit.stack.appsody.dev/date: Fri Oct 9 09:28:22 2020 -0400
     commit.stack.appsody.dev/message: 'Merge pull request #347 from garypicher/updateUBIVersionForOpenJDKImage'
@@ -11,7 +13,11 @@ metadata:
       Express collection
     distribution-scope: public
     help: For more information visit https://github.com/sclorg/s2i-nodejs-container
-    image.opencontainers.org/created: "2020-10-23T19:35:26+02:00"
+    image.opencontainers.org/created: "2020-10-26T12:15:34+01:00"
+    image.opencontainers.org/documentation: https://github.com/LarsBesselmannIBM/appsody-demo
+    image.opencontainers.org/revision: ff34418b5fe493450928a00d07ac5d529f998a17-modified
+    image.opencontainers.org/source: https://github.com/LarsBesselmannIBM/appsody-demo/tree/master
+    image.opencontainers.org/url: https://github.com/LarsBesselmannIBM/appsody-demo
     k8s.io/description: Node.js 12 available as container is a base platform for building
       and running various Node.js 12 applications and frameworks. Node.js is a platform
       built on Chrome's JavaScript runtime for easily building fast, scalable network
@@ -21,7 +27,6 @@ metadata:
     k8s.io/display-name: Node.js 12
     maintainer: SoftwareCollections.org <sclorg@redhat.com>
     name: kabanero/nodejs-express
-    namespace: my-appsody-apps
     openshift.io/expose-services: 8080:http
     openshift.io/tags: builder,nodejs,nodejs12
     redhat.com/build-host: cpt-1008.osbs.prod.upshift.rdu2.redhat.com
@@ -58,6 +63,7 @@ metadata:
     stack.appsody.dev/id: nodejs-express
     stack.appsody.dev/version: 0.4.10
   name: my-nodejs-express1
+  namespace: my-appsody-apps
 spec:
   applicationImage: dev.local/my-nodejs-express1
   createKnativeService: false
